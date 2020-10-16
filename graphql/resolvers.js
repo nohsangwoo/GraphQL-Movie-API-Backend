@@ -1,3 +1,5 @@
+import { people } from "./db";
+
 const Sangwoo = {
   name: "sangwoo",
   age: 18,
@@ -6,7 +8,8 @@ const Sangwoo = {
 
 const resolvers = {
   Query: {
-    person: () => sangwoo,
+    sangwoo: () => Sangwoo,
+    people: () => people,
   },
 };
 
