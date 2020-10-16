@@ -1,4 +1,4 @@
-import { people } from "./db";
+import { people, getById } from "./db";
 
 const Sangwoo = {
   name: "sangwoo",
@@ -10,6 +10,8 @@ const resolvers = {
   Query: {
     sangwoo: () => Sangwoo,
     people: () => people,
+    // 전달받은 argument에서 id를 뽑아옴
+    person: (_, { id }) => getById(id),
   },
 };
 
