@@ -1,17 +1,12 @@
-import { people, getById } from "./db";
-
-const Sangwoo = {
-  name: "sangwoo",
-  age: 18,
-  gender: "female",
-};
+import { getMovies, getById, addMovie } from "./db";
 
 const resolvers = {
   Query: {
-    sangwoo: () => Sangwoo,
-    people: () => people,
-    // 전달받은 argument에서 id를 뽑아옴
-    person: (_, { id }) => getById(id),
+    movies: () => getMovies(),
+    movie: (_, { id }) => getById(id),
+  },
+  Mutation: {
+    addMovie: (_, { name, score }) => addMovie(name, score),
   },
 };
 
