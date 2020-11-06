@@ -1,4 +1,4 @@
-# GraphQL Movie APi Backend
+# GraphQL Movie API Backend
 
 > Graphql과 yts API를 사용하여 movie data를 가져옴 (movie server 구현)<br/>
 > graphql-yoga 설치방법 학습<br/>
