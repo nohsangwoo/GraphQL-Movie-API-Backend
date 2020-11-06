@@ -1,22 +1,17 @@
-#0.1 yarn add graphql-yoga
-#0.4
+# GraphQL Movie APi Backend
 
-npm i nodemon -D
-npm i @babel/cli -D
-npm i @babel/core -D
-npm i @babel/node -D
-npm i @babel/preset-env -D
+> Graphql과 yts API를 사용하여 movie data를 가져옴 (movie server 구현)
+> graphql-yoga 설치방법 학습
+> nodemon 사용방법 학습
+> .barbelrc 파일 작성방법 학습
+> axios의 사용방법을 학습
+> resolvers와 schema의 개념을 잡음
+> GraphQL-Movie-APi-Font랑 연결
 
-yarn 으로 설치하고 실행해됨 (package.json 설정 참조)
+### 구현 동작
 
-#.babelrc 파일 만들고
-{
-"presets": ["env", "stage-3"]
-}
-을 내용으로 넣음
-
-# graphql 의 작동방식을 다시한번 recap resolvers와 schema의 개념을 잡음
-
-# YTS API로 DB불러올꺼임
-
-yarn add node-fetch
+![DOC](./README_IMAGE/DOC.png)
+![SCHEMA](./README_IMAGE/SCHEMA.png)
+![1-movies](./README_IMAGE/1-movies.png)
+![2-movie](./README_IMAGE/2-movie.png)
+![3-suggestions](./README_IMAGE/3-suggestions.png)
